@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var urban = require('../lib/urban'),
+    program = require('commander');
+
+program.usage('[words]').version(urban.version).parse(process.argv);
+
+var words = program.args.join(' ');
+
+if (words.trim().length === 0) {
+  program.emit('help');
+}
+else {
+  process.stdin.resume();
+  urban(encodeURI(words)).first(function(res) {
+    console.log(" --- %s\n%s", words, res.definition || 'Not found');
+    process.stdin.destroy();
+  });
+}

@@ -1,0 +1,20 @@
+{
+  "author": "Murilo Santana <mvrilo@gmail.com>",
+  "name": "urban",
+  "description": "Simple API and command line for Urban Dictionary",
+  "version": "0.0.1",
+  "main": "./lib/urban.js",
+  "repository": {
+    "url": "git://github.com/mvrilo/urban"
+  },
+  "keywords": ["urban", "dictionary", "api", "definition"],
+  "engines": {
+    "node": ">=v0.4.9"
+  },
+  "bin": {
+    "urban": "./bin/urban"
+  },
+  "dependencies": {
+    "commander": "0.3.0"
+  }
+}
