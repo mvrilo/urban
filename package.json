@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "main": "./lib/urban.js",
   "repository": {
-    "url": "git://github.com/mvrilo/urban"
+    "url": "git://github.com/mvrilo/urban.git"
   },
   "keywords": ["urban", "dictionary", "api", "definition"],
   "engines": {
