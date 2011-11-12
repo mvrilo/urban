@@ -3,7 +3,9 @@
 var urban = require('../lib/urban'),
     program = require('commander');
 
-program.usage('[words]').version(urban.version).parse(process.argv);
+program.usage('[words]').version(urban.version)
+.option('-p, --permalink', 'displays the permalink')
+.parse(process.argv);
 
 var words = program.args.join(' ');
 
@@ -13,7 +15,12 @@ if (words.trim().length === 0) {
 else {
   process.stdin.resume();
   urban(encodeURI(words)).first(function(res) {
-    console.log(" --- %s\n%s", words, res.definition || 'Not found');
+    var args = [' --- %s\n%s', words, res.definition]
+    if (program.permalink) {
+      args[0] += "\n * %s";
+      args.push(res.permalink)
+    }
+    console.log.apply(this, args);
     process.stdin.destroy();
   });
 }
