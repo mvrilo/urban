@@ -1,6 +1,6 @@
 # urban
 
-The Urban Dictionary doesn't have an actual API, so the data comes from the iPhone page which comes in json format, easy to manipulate: `http://www.urbandictionary.com/iphone/search/define?term=kvlt`
+The Urban Dictionary has a JSON API which can be easily accessed via URLs like this: `http://api.urbandictionary.com/v0/define?term=kvlt`
 
 ### installation
 
