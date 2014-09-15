@@ -21,6 +21,6 @@ else {
       args.push(res.permalink)
     }
     console.log.apply(this, args);
-    process.stdin.destroy();
+    process.stdin.pause();
   });
 }
