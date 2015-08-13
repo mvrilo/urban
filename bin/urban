@@ -14,7 +14,7 @@ if (words.trim().length === 0) {
 }
 else {
   process.stdin.resume();
-  urban(encodeURI(words)).first(function(res) {
+  urban(words).first(function(res) {
     var args = [' --- %s\n%s', words];
     if (!res) {
       args.push("No results");
