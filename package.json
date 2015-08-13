@@ -2,7 +2,7 @@
   "author": "Murilo Santana <mvrilo@gmail.com>",
   "name": "urban",
   "description": "Simple API and command line for Urban Dictionary",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "./lib/urban.js",
   "repository": {
     "type": "git",
