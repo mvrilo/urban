@@ -11,10 +11,10 @@ The Urban Dictionary has a JSON API which can be easily accessed via URLs like t
 
 #### bin
     $ urban facepalm
-    $ urban -r // gets random entry
+    $ urban -r // random mode
 
 #### lib
-    var urban = require('urban').urban,
+    var urban = require('urban'),
         trollface = urban('trollface');
 
     trollface.first(function(json) {
@@ -22,11 +22,10 @@ The Urban Dictionary has a JSON API which can be easily accessed via URLs like t
     });
     
     
-    // Using the random feature
+    // Random mode
     var urban = require('urban');
     
-    urban.setRandom(true);
-    urban().first(function(json) {
+    urban.random().first(function(json) {
         console.log(json);
     });
     
