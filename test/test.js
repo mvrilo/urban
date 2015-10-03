@@ -32,6 +32,18 @@ urban('bi winning').on('end', function(res) {
         assert.equal(words, self.words);
         assert.equal(array.words, self.words);
       });
+
+        // random mode
+        urban.random().on('end', function(res){
+            var self = this;
+            test('random mode: response: 200 ok', function() {
+                assert.equal(self._res.statusCode, 200);
+            });
+            test('random mode: list is populated', function() {
+                assert.equal(res.list.length > 1, true);
+            });
+        })
+
     });
   });
 });

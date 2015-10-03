@@ -11,6 +11,7 @@ The Urban Dictionary has a JSON API which can be easily accessed via URLs like t
 
 #### bin
     $ urban facepalm
+    $ urban -r // random mode
 
 #### lib
     var urban = require('urban'),
@@ -19,6 +20,15 @@ The Urban Dictionary has a JSON API which can be easily accessed via URLs like t
     trollface.first(function(json) {
         console.log(json);
     });
+    
+    
+    // Random mode
+    var urban = require('urban');
+    
+    urban.random().first(function(json) {
+        console.log(json);
+    });
+    
 
 ### license
 
