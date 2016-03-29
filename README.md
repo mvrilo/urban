@@ -1,6 +1,6 @@
 # urban
 
-The Urban Dictionary has a JSON API which can be easily accessed via URLs like this: `http://api.urbandictionary.com/v0/define?term=kvlt`
+The [Urban Dictionary](https://www.urbandictionary.com/) program and library for [node.js](https://nodejs.org/). The API is official, but undocumented.
 
 ### installation
 
