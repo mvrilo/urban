@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Urban by mvrilo</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/mvrilo/urban">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/mvrilo/urban/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/mvrilo/urban/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Urban</h1>
+          <p>Command line tool and API for the Urban Dictionary</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/mvrilo">mvrilo</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="urban" class="anchor" href="#urban" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>urban</h1>
+
+<p>The <a href="https://www.urbandictionary.com/">Urban Dictionary</a> program and library for <a href="https://nodejs.org/">node.js</a>. The API is official, but undocumented.</p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>installation</h3>
+
+<pre><code>$ npm install -g urban # bin
+$ npm install urban # lib
+</code></pre>
+
+<h3>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>examples</h3>
+
+<h4>
+<a id="bin" class="anchor" href="#bin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>bin</h4>
+
+<pre><code>$ urban facepalm
+$ urban -r // random mode
+</code></pre>
+
+<h4>
+<a id="lib" class="anchor" href="#lib" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>lib</h4>
+
+<pre><code>var urban = require('urban'),
+    trollface = urban('trollface');
+
+trollface.first(function(json) {
+    console.log(json);
+});
+
+
+// Random mode
+var urban = require('urban');
+
+urban.random().first(function(json) {
+    console.log(json);
+});
+</code></pre>
+
+<h3>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>license</h3>
+
+<p>MIT</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>

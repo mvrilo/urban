@@ -1,0 +1,6 @@
+{
+  "name": "Urban",
+  "tagline": "Command line tool and API for the Urban Dictionary",
+  "body": "# urban\r\n\r\nThe [Urban Dictionary](https://www.urbandictionary.com/) program and library for [node.js](https://nodejs.org/). The API is official, but undocumented.\r\n\r\n### installation\r\n\r\n    $ npm install -g urban # bin\r\n    $ npm install urban # lib\r\n\r\n### examples\r\n\r\n#### bin\r\n    $ urban facepalm\r\n    $ urban -r // random mode\r\n\r\n#### lib\r\n    var urban = require('urban'),\r\n        trollface = urban('trollface');\r\n\r\n    trollface.first(function(json) {\r\n        console.log(json);\r\n    });\r\n    \r\n    \r\n    // Random mode\r\n    var urban = require('urban');\r\n    \r\n    urban.random().first(function(json) {\r\n        console.log(json);\r\n    });\r\n    \r\n\r\n### license\r\n\r\nMIT\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
