@@ -2,14 +2,19 @@
   "author": "Murilo Santana <mvrilo@gmail.com>",
   "name": "urban",
   "description": "Simple API and command line for Urban Dictionary",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "license": "MIT",
   "main": "./lib/urban.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/mvrilo/urban.git"
   },
-  "keywords": ["urban", "dictionary", "api", "definition"],
+  "keywords": [
+    "urban",
+    "dictionary",
+    "api",
+    "definition"
+  ],
   "engines": {
     "node": ">=v0.4.9"
   },
